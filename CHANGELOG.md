@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.1.0] - 2016-11-16
 ### Added
 - split test cases into mutiple files
 - validate version of react-native
@@ -13,4 +15,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - initialize this project
 
-[Unreleased]: https://github.com/super-fe/superfe-rn-inspector/compare/1.0.0...HEAD
+[1.1.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.0.0...1.1.0
+[Unreleased]: https://github.com/super-fe/superfe-rn-inspector/compare/1.1.0...HEAD

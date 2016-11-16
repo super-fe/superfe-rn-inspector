@@ -9,6 +9,11 @@ cd your_project
 ./node_modules/.bin/inspect .
 ```
 
+
+## changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
+
 ## license
 
 BSD-2-Clause
