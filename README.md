@@ -1,12 +1,12 @@
 # superfe-rn-inspector
 [![NPM version][npm-image]][npm-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
 
-Inspector tool for super-fe's react-native apps
+Inspector tool for super-fe's react-native apps using [mocha](https://mochajs.org/).
 
 ```sh
-npm install superfe-rn-inspector -g
+npm install superfe-rn-inspector
 cd your_project
-inspect .
+./node_modules/.bin/inspect .
 ```
 
 ## license

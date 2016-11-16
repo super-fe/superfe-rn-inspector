@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- split test cases into mutiple files
 - validate version of react-native
 
 ## 1.0.0 - 2016-11-15
