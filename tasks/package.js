@@ -56,11 +56,11 @@ describe('package.json', function () {
     it('should have a "author" in object', function () {
         assert.ok(_.isPlainObject(pkg.author));
     });
-    it('should have a "author.author.name" in string', function () {
+    it('should have a "author.name" in string', function () {
         assert.ok(_.isString(pkg.author.name));
         assert.ok(_.trim(pkg.author.name).length > 0);
     });
-    it('should have a "author.author.email" in string', function () {
+    it('should have a "author.email" in string', function () {
         assert.ok(_.isString(pkg.author.email));
         assert.ok(_.trim(pkg.author.email).length > 0);
     });
