@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.2.0] - 2016-11-23
+### Changed
+ - inspect local react-native version
+
 ## [1.1.1] - 2016-11-17
 ### Changed
 - fixed wrong test names
@@ -19,6 +23,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - initialize this project
 
-[1.1.1]: https://github.com/super-fe/superfe-rn-inspector/compare/1.0.0...1.1.1
+[1.2.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.1.1...1.2.0
+[1.1.1]: https://github.com/super-fe/superfe-rn-inspector/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.0.0...1.1.0
-[Unreleased]: https://github.com/super-fe/superfe-rn-inspector/compare/1.1.1...HEAD
+[Unreleased]: https://github.com/super-fe/superfe-rn-inspector/compare/1.2.1...HEAD

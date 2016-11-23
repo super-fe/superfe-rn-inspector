@@ -14,6 +14,7 @@ var Promise = require('bluebird');
 var fs = Promise.promisifyAll(require('fs'));
 var assert = require('assert');
 var semver = require('semver');
+var resolve = require('resolve');
 var compatibleRnVersions = require('superfe-compatible-rn-versions');
 var _ = require('lodash');
 
@@ -70,8 +71,21 @@ describe('package.json', function () {
     it('should depend on "react-native"', function () {
         assert.ok('react-native' in pkg.dependencies);
     });
-    it('version of "react-native" should one of [' + compatibleRnVersions.join() + ']', function () {
-        assert.ok(compatibleRnVersions.indexOf(pkg.dependencies['react-native']) > -1);
+    it('local "react-native" should match ' + compatibleRnVersions.join('/'), function () {
+        let pkg = resolve.sync('react-native/package.json', {
+            basedir: process.cwd()
+        });
+        if (pkg) {
+            pkg = require(pkg);
+            try {
+                assert.ok(compatibleRnVersions.indexOf(pkg.version) > -1);
+            } catch (e) {
+                this.skip();
+            }
+        } else {
+            this.skip();
+        }
+
     });
     it('should have a "devDependencies" in object', function () {
         assert.ok(_.isPlainObject(pkg.devDependencies));
