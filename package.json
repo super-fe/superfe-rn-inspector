@@ -1,6 +1,6 @@
 {
   "name": "superfe-rn-inspector",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Inspector tool for super-fe's react-native apps",
   "main": "index.js",
   "bin": {
