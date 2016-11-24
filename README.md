@@ -9,6 +9,13 @@ cd your_project
 ./node_modules/.bin/inspect .
 ```
 
+This module can also be used programmatically from node:
+
+```js
+var inspect = require('superfe-rn-inspector');
+
+inspect(process.cwd());
+```
 
 ## changelog
 
