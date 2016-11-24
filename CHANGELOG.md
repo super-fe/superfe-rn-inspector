@@ -5,10 +5,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- inspect node & npm versions
 
 ## [1.2.0] - 2016-11-23
 ### Changed
- - inspect local react-native version
+- inspect local react-native version
 
 ## [1.1.1] - 2016-11-17
 ### Changed
