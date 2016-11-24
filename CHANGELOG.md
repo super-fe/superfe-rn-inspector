@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - inspect node & npm versions
 - inspect .gitignore
+- inspect .babelrc
 
 ## [1.2.0] - 2016-11-23
 ### Changed

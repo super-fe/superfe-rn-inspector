@@ -10,8 +10,7 @@
  * @since 0.1.0
  */
 'use strict';
-var Promise = require('bluebird');
-var fs = Promise.promisifyAll(require('fs'));
+var fs = require('fs');
 var assert = require('assert');
 var gitignore = require('parse-gitignore');
 
