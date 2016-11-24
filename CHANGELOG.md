@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - inspect node & npm versions
+- inspect .gitignore
 
 ## [1.2.0] - 2016-11-23
 ### Changed
