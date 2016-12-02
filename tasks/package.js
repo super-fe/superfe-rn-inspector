@@ -54,22 +54,32 @@ describe('package.json', function () {
     it('value of "pre-commit" should be in "scripts"', function () {
         assert.ok(pkg['pre-commit'] in pkg.scripts);
     });
-    it('should have a "author" in object', function () {
-        assert.ok(_.isPlainObject(pkg.author));
-    });
-    it('should have a "author.name" in string', function () {
-        assert.ok(_.isString(pkg.author.name));
-        assert.ok(_.trim(pkg.author.name).length > 0);
-    });
-    it('should have a "author.email" in string', function () {
-        assert.ok(_.isString(pkg.author.email));
-        assert.ok(_.trim(pkg.author.email).length > 0);
+    it('should have a "author"', function () {
+        var checkAuthorItem = function (author) {
+            assert.ok(author);
+            assert.ok(_.isString(author.name) && author.name, '"name" should be non-empty string');
+            assert.ok(_.isString(author.email) && author.email,
+                '"email" should be non-empty string');
+        };
+
+        switch (true) {
+        case _.isArray(pkg.author):
+            assert.ok(pkg.author.length, 'should have at least one author');
+            pkg.author.forEach(checkAuthorItem);
+            break;
+        case _.isPlainObject(pkg.author):
+            checkAuthorItem(pkg.author);
+            break;
+        case _.isString(pkg.author):
+            assert.ok(pkg.author, '"author" should be non-empty');
+            break;
+        default:
+            assert.ok(false, 'wrong "author" type');
+        }
+
     });
     it('should have a "dependencies" in object', function () {
         assert.ok(_.isPlainObject(pkg.dependencies));
-    });
-    it('should depend on "react-native"', function () {
-        assert.ok('react-native' in pkg.dependencies);
     });
     it('local "react-native" should match ' + compatibleRnVersions.join('/'), function () {
         let pkg = resolve.sync('react-native/package.json', {
@@ -89,5 +99,11 @@ describe('package.json', function () {
     });
     it('should have a "devDependencies" in object', function () {
         assert.ok(_.isPlainObject(pkg.devDependencies));
+    });
+    it('should depend on "react-native"', function () {
+        assert.ok('react-native' in pkg.dependencies || 'react-native' in pkg.devDependencies);
+    });
+    it('should depend on "react"', function () {
+        assert.ok('react' in pkg.dependencies || 'react' in pkg.devDependencies);
     });
 });
