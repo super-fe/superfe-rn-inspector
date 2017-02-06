@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.2.4] - 2017-02-06
+### Changed
+- "output" instead of "bundle" in `.gitignore`
+
 ## [1.2.3] - 2016-12-02
 ### Changed
 - author could be string/array/object
@@ -36,9 +40,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - initialize this project
 
+[1.2.4]: https://github.com/super-fe/superfe-rn-inspector/compare/1.2.3...1.2.4
 [1.2.3]: https://github.com/super-fe/superfe-rn-inspector/compare/1.2.2...1.2.3
 [1.2.2]: https://github.com/super-fe/superfe-rn-inspector/compare/1.2.0...1.2.2
 [1.2.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.1.1...1.2.0
 [1.1.1]: https://github.com/super-fe/superfe-rn-inspector/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.0.0...1.1.0
-[Unreleased]: https://github.com/super-fe/superfe-rn-inspector/compare/1.2.3...HEAD
+[Unreleased]: https://github.com/super-fe/superfe-rn-inspector/compare/1.2.4...HEAD

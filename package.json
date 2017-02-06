@@ -1,13 +1,12 @@
 {
   "name": "superfe-rn-inspector",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Inspector tool for super-fe's react-native apps",
   "main": "index.js",
   "bin": {
     "inspect": "bin/cli.js"
   },
   "scripts": {
-    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -24,15 +23,15 @@
   },
   "homepage": "https://github.com/super-fe/superfe-rn-inspector#readme",
   "dependencies": {
-    "bluebird": "^3.4.6",
+    "bluebird": "^3.4.7",
     "check-node-version": "^1.1.2",
     "editorconfig": "^0.13.2",
     "glob": "^7.1.1",
     "js-yaml": "^3.7.0",
-    "lodash": "^4.17.2",
+    "lodash": "^4.17.4",
     "mocha": "^3.2.0",
     "parse-gitignore": "^0.3.1",
-    "resolve": "^1.1.7",
+    "resolve": "^1.2.0",
     "semver": "^5.3.0",
     "superfe-compatible-rn-versions": "^1.1.0"
   }

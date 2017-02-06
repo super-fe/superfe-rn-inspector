@@ -4,7 +4,7 @@
 Inspector tool for super-fe's react-native apps using [mocha](https://mochajs.org/).
 
 ```sh
-npm install superfe-rn-inspector
+npm install superfe-rn-inspector --save-dev
 cd your_project
 ./node_modules/.bin/inspect .
 ```
