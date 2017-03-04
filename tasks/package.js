@@ -54,7 +54,7 @@ describe('package.json', function () {
     it('value of "pre-commit" should be in "scripts"', function () {
         assert.ok(pkg['pre-commit'] in pkg.scripts);
     });
-    it('should have a "author"', function () {
+    it('should have a "author" or "contributors"', function () {
         var checkAuthorItem = function (author) {
             assert.ok(author);
             assert.ok(_.isString(author.name) && author.name, '"name" should be non-empty string');
@@ -62,19 +62,25 @@ describe('package.json', function () {
                 '"email" should be non-empty string');
         };
 
-        switch (true) {
-        case _.isArray(pkg.author):
-            assert.ok(pkg.author.length, 'should have at least one author');
-            pkg.author.forEach(checkAuthorItem);
-            break;
-        case _.isPlainObject(pkg.author):
-            checkAuthorItem(pkg.author);
-            break;
-        case _.isString(pkg.author):
-            assert.ok(pkg.author, '"author" should be non-empty');
-            break;
-        default:
-            assert.ok(false, 'wrong "author" type');
+        assert.ok(('author' in pkg) || ('contributors' in pkg), 'none of them exist');
+
+        if ('author' in pkg) {
+            assert.ok(!_.isArray(pkg.author), 'You may change "author" to "contributors"');
+
+            switch (true) {
+            case _.isPlainObject(pkg.author):
+                checkAuthorItem(pkg.author);
+                break;
+            case _.isString(pkg.author):
+                assert.ok(pkg.author, '"author" should be non-empty');
+                break;
+            default:
+                assert.ok(false, '"author" should be a string or a plain object');
+            }
+        }
+        if ('contributors' in pkg) {
+            assert.ok(_.isArray(pkg.contributors), '"contributors" should be an array');
+            pkg.contributors.forEach(checkAuthorItem);
         }
 
     });

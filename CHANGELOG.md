@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [2.1.0] - 2017-03-04
+### Changed
+- target workspace default to current working directoru(cwd)
+- perfer "contributors" than "auhtor"
+
 ## [2.0.0] - 2017-02-16
 ### Changed
 - change fecs to eslint
@@ -48,6 +53,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - initialize this project
 
+[2.0.1]: https://github.com/super-fe/superfe-rn-inspector/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.2.5...2.0.0
 [1.2.5]: https://github.com/super-fe/superfe-rn-inspector/compare/1.2.4...1.2.5
 [1.2.4]: https://github.com/super-fe/superfe-rn-inspector/compare/1.2.3...1.2.4
@@ -56,4 +62,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [1.2.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.1.1...1.2.0
 [1.1.1]: https://github.com/super-fe/superfe-rn-inspector/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.0.0...1.1.0
-[Unreleased]: https://github.com/super-fe/superfe-rn-inspector/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/super-fe/superfe-rn-inspector/compare/2.0.1...HEAD

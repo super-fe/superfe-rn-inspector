@@ -19,7 +19,7 @@ inspect(process.cwd());
 
 ## changelog
 
-See [CHANGELOG.md](CHANGELOG.md).
+Check out [CHANGELOG.md](CHANGELOG.md).
 
 ## license
 
