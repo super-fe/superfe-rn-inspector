@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [2.2.1] - 2017-03-22
+### Changed
+- fixed `check-node-version`
+
 ## [2.2.0] - 2017-03-22
 ### Removed
 - check `react`&`react-native`
@@ -57,6 +61,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - initialize this project
 
+[2.2.1]: https://github.com/super-fe/superfe-rn-inspector/compare/2.2.0...2.2.1
 [2.2.0]: https://github.com/super-fe/superfe-rn-inspector/compare/2.1.0...2.2.0
 [2.1.0]: https://github.com/super-fe/superfe-rn-inspector/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.2.5...2.0.0
@@ -67,4 +72,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [1.2.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.1.1...1.2.0
 [1.1.1]: https://github.com/super-fe/superfe-rn-inspector/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/super-fe/superfe-rn-inspector/compare/1.0.0...1.1.0
-[Unreleased]: https://github.com/super-fe/superfe-rn-inspector/compare/2.2.0...HEAD
+[Unreleased]: https://github.com/super-fe/superfe-rn-inspector/compare/2.2.1...HEAD
