@@ -1,6 +1,6 @@
 {
   "name": "superfe-rn-inspector",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Inspector tool for super-fe's react-native apps",
   "main": "index.js",
   "bin": {
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/super-fe/superfe-rn-inspector#readme",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "check-node-version": "^1.1.2",
+    "check-node-version": "^2.0.1",
     "editorconfig": "^0.13.2",
     "glob": "^7.1.1",
     "js-yaml": "^3.8.2",

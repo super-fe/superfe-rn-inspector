@@ -4,9 +4,10 @@
  *
  * changelog
  * 2016-11-15[17:03:19]:revised
+ * 2017-03-22[17:10:32]:remove react&react-native
  *
  * @author yanni4night@gmail.com
- * @version 0.1.0
+ * @version 0.2.0
  * @since 0.1.0
  */
 'use strict';
@@ -106,10 +107,10 @@ describe('package.json', function () {
     it('should have a "devDependencies" in object', function () {
         assert.ok(_.isPlainObject(pkg.devDependencies));
     });
-    it('should depend on "react-native"', function () {
+    /*it('should depend on "react-native"', function () {
         assert.ok('react-native' in pkg.dependencies || 'react-native' in pkg.devDependencies);
     });
     it('should depend on "react"', function () {
         assert.ok('react' in pkg.dependencies || 'react' in pkg.devDependencies);
-    });
+    });*/
 });
