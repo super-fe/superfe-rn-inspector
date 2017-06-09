@@ -38,9 +38,9 @@ describe('package.json', function () {
     it('should have a valid version', function () {
         assert.ok(semver.valid(pkg.version));
     });
-    it('should have a "private=true"', function () {
-        assert.deepEqual(pkg.private, true);
-    });
+    // it('should have a "private=true"', function () {
+    //     assert.deepEqual(pkg.private, true);
+    // });
     it('should have a "scripts" in object', function () {
         assert.ok(_.isPlainObject(pkg.scripts));
     });
